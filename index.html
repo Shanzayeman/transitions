@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #one{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(19, 18, 18);
+           transition: width 10s;
+        }
+        #one:hover{
+            width:300px;
+        }
+        #two{
+            margin-top: 10px;
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            transition: width 2s,height 2s ,transform 2s;
+        }
+        #two:hover{
+            width: 400px;
+            height: 400px;
+            transform: rotate(360deg);
+        }
+        #three{
+            width: 100px;
+            height: 100px;
+            transition: width 2s , height 2s;
+        }
+        #three:hover{
+            width: 300px;
+            height: 300px;
+        }
+        #four{
+            margin-top: 150px;
+            margin-left: 200px;
+            margin-bottom: 100px;
+            width: 400px;
+            height: 400px;
+            transition: width 5s,height 5s,transform 5s;
+            transition-delay: 1s;
+        }
+        #four:hover{
+            width: 200px;
+            height: 200px;
+            transform: rotate(360deg);
+        }
+        #love{
+            margin-top: 50px;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation-name: example;
+            animation-duration: 10s;
+        }
+        @keyframes example{
+            0%{
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                left: 200px;
+                top: 0px;
+            }
+            50%{
+                left: 200px;
+                top: 200px;
+            }
+            75%{
+                left: 0px;
+                top: 200px;
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+            }
+        }
+        #gall{
+            width: 100px;
+            height: 100px;
+            animation-name: example;
+            animation-duration: 5s;
+        }
+       @keyframes example {
+            from{
+                width: 100px;
+                height: 100px;
+            }
+            to{
+                width: 300px;
+                height:300px;
+            }
+        }
+        #six{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: step-end;
+            transition: width 2s;
+        }
+        #six:hover{
+            width: 300px;
+        }
+        #seven{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(17, 14, 14);
+            transition: ease-in-out;
+            transition: width 2s;
+        }
+        #seven:hover{
+            width: 300px;
+        }
+        #eight{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(175, 51, 154);
+            transition: ease-out;
+            transition: width 2s;
+        }
+        #eight:hover{
+            width: 300px;
+        }
+        #nine{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(17, 160, 41);
+            transition: ease-in;
+            transition: width 2s;
+        }
+        #nine:hover{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <img id="three" src="images.jpg" alt="error">
+ <div id="one"></div>
+ <div id="two"></div>
+<img id="four" src="images.jpg" alt="error">
+<br><br><br><br>
+<img id="love" src="images.jpg" alt="error">
+<br><br><br><br><br>
+<img id="gall" src="images.jpg" alt="error">
+<div id="six"></div>
+<div id="seven"></div>
+<div id="eight"></div>
+<div id="nine"></div>
+</body>
+
+</html>
